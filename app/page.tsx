@@ -236,6 +236,75 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* ═══ CLAVE PRODUCT SECTION ═══ */}
+      <section className="relative z-10 px-6 py-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12">
+            <p className="text-xs font-medium tracking-widest text-blue-400 uppercase mb-4">
+              Our Products
+            </p>
+            <h2 className="text-3xl md:text-4xl font-semibold text-white leading-tight">
+              Built in-house.{" "}
+              <span className="text-white/35">Ready for your business.</span>
+            </h2>
+          </div>
+
+          <div
+            className="rounded-3xl border border-blue-500/20 p-10 md:p-14 relative overflow-hidden"
+            style={{
+              background: "linear-gradient(135deg, rgba(30,58,138,0.3) 0%, rgba(10,15,30,0.9) 70%)",
+            }}
+          >
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-blue-600/10 blur-[100px] pointer-events-none" />
+
+            <div className="relative grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <div className="relative w-36 h-12 mb-6">
+                  <img
+                    src="/Clave-White.png"
+                    alt="Clave"
+                    className="h-full w-auto object-contain"
+                  />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-semibold text-white mb-4 leading-tight">
+                  A custom CRM built for contractors — starting at $297/month.
+                </h3>
+                <p className="text-white/50 leading-relaxed mb-8">
+                  Track leads, manage projects, send estimates with e-signature, collect payments,
+                  and run your whole operation from your phone. Built simple on purpose —
+                  by someone who has actually worked in the field.
+                </p>
+                <a
+                  href="/clave"
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-[#0a0f1e] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_40px_rgba(96,165,250,0.35)]"
+                >
+                  Learn More About Clave
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { icon: "📱", title: "Mobile App", desc: "Run your business from the field" },
+                  { icon: "✍️", title: "E-Signature", desc: "Send and close estimates fast" },
+                  { icon: "💳", title: "Payments", desc: "Get paid without chasing anyone" },
+                  { icon: "👥", title: "Role-Based", desc: "Built for owners and teams" },
+                ].map((item, i) => (
+                  <div key={i} className="rounded-xl border border-white/[0.07] bg-white/[0.03] p-5">
+                    <div className="text-lg mb-3">{item.icon}</div>
+                    <h4 className="text-sm font-semibold text-white mb-1">{item.title}</h4>
+                    <p className="text-xs text-white/40 leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ═══ CTA SECTION ═══ */}
       <section className="relative z-10 px-6 py-24">
         <div className="max-w-4xl mx-auto text-center">

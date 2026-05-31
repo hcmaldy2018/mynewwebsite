@@ -30,6 +30,7 @@ export function NavBar() {
         <nav className="hidden md:flex items-center gap-8">
           {[
             { label: "Services", href: "/#services" },
+            { label: "Clave CRM", href: "/clave" },
             { label: "About", href: "/#about" },
             { label: "Contact", href: "/contact" },
           ].map((item) => (
@@ -85,6 +86,7 @@ export function NavBar() {
         >
           {[
             { label: "Services", href: "/#services" },
+            { label: "Clave CRM", href: "/clave" },
             { label: "About", href: "/#about" },
             { label: "Contact", href: "/contact" },
           ].map((item) => (
