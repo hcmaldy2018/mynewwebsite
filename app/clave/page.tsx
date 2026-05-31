@@ -28,7 +28,7 @@ export default function ClavePage() {
         {/* Clave Logo */}
         <div className="mb-10 relative w-48 h-16">
           <Image
-            src="/CLAVE_NO_BG.PNG"
+            src="/Clave-White.png"
             alt="Clave"
             fill
             style={{ objectFit: "contain" }}
@@ -338,7 +338,7 @@ export default function ClavePage() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="mb-8 relative w-32 h-10 mx-auto">
             <Image
-              src="/CLAVE_NO_BG.PNG"
+              src="/Clave-White.png"
               alt="Clave"
               fill
               style={{ objectFit: "contain" }}
