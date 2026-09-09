@@ -35,7 +35,7 @@ export default function Home() {
 
         {/* Headline */}
         <h1 className="text-[42px] md:text-7xl font-semibold tracking-tight text-white max-w-4xl mx-auto leading-[1.08] mb-6">
-          Stop Running Your Business{" "}
+          Grow Your Business.{" "}
           <span
             className="text-transparent"
             style={{
@@ -44,14 +44,14 @@ export default function Home() {
               WebkitTextFillColor: "transparent",
             }}
           >
-            From Memory.
+            Protect What You Build.
           </span>
         </h1>
 
         {/* Subhead */}
         <p className="text-lg md:text-xl text-white/50 leading-relaxed max-w-2xl mx-auto mb-12">
-          We build the systems, automations, and sales tools that let contractors
-          win more jobs, follow up faster, and get paid — without adding more to your plate.
+          We help contractors and small businesses get organized, generate leads, and scale —
+          then protect what they've built with the right financial tools for their team, their family, and their future.
         </p>
 
         {/* CTA buttons */}
