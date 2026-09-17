@@ -79,13 +79,14 @@ export default function ContactPage() {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              your business.
+              what you need.
             </span>
           </h1>
 
           <p className="text-white/45 leading-relaxed mb-10">
-            15 minutes. No pitch. We'll look at where you're losing time and money
-            and tell you exactly what we'd do about it — whether you hire us or not.
+            Whether you're looking to grow your operation, get the right systems in place,
+            or plan for your financial future — 15 minutes is all it takes to figure out
+            if we're the right fit.
           </p>
 
           <div className="space-y-5">
@@ -186,11 +187,11 @@ export default function ContactPage() {
 
               <div>
                 <label className="block text-xs font-medium text-white/40 mb-2 tracking-wide uppercase">
-                  Tell us about your business
+                  How can we help?
                 </label>
                 <textarea
                   name="message"
-                  placeholder="What kind of work do you do, how many people on your team, what's the biggest thing slowing you down?"
+                  placeholder="Tell us a little about yourself, what you do, and what you're looking for — business systems, lead generation, financial planning, or something else."
                   value={form.message}
                   onChange={handleChange}
                   rows={4}
