@@ -22,7 +22,7 @@ export function NavBar() {
             Romero & Locksley
           </span>
           <span className="text-[10px] text-white/35 tracking-wider mt-1 hidden sm:block">
-            Technology Built From Field Experience
+            Services Built From Field Experience
           </span>
         </Link>
 
