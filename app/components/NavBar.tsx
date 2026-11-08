@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export function NavBar() {
@@ -17,13 +18,23 @@ export function NavBar() {
         }}
       >
         {/* Logo */}
-        <Link href="/" className="flex flex-col group">
-          <span className="text-sm font-semibold text-white tracking-wide leading-none">
-            Romero & Locksley
-          </span>
-          <span className="text-[10px] text-white/35 tracking-wider mt-1 hidden sm:block">
-            Services Built From Field Experience
-          </span>
+        <Link href="/" className="flex items-center gap-3 group">
+          <Image
+            src="/logo-mark.png"
+            alt="Romero & Locksley"
+            width={510}
+            height={283}
+            priority
+            className="h-9 w-auto"
+          />
+          <div className="flex flex-col">
+            <span className="text-sm font-semibold text-white tracking-wide leading-none">
+              Romero & Locksley
+            </span>
+            <span className="text-[10px] text-white/35 tracking-wider mt-1 hidden sm:block">
+              Services Built From Experience
+            </span>
+          </div>
         </Link>
 
         {/* Desktop nav links */}
