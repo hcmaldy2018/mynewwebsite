@@ -71,6 +71,8 @@ export default function ClavePage() {
           <span className="text-white/40 text-sm line-through">Used to cost $10,000+</span>
           <span className="w-px h-4 bg-white/20" />
           <span className="text-white font-semibold text-sm">Starting at $297/month</span>
+          <span className="w-px h-4 bg-white/20" />
+          <span className="text-white/60 text-sm">$400 one-time activation</span>
         </div>
 
         {/* CTAs */}
@@ -255,6 +257,52 @@ export default function ClavePage() {
         </div>
       </section>
 
+      {/* ═══ ONBOARDING ═══ */}
+      <section className="relative z-10 px-6 py-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12 max-w-2xl">
+            <p className="text-xs font-medium tracking-widest text-blue-400 uppercase mb-4">
+              Activation & Onboarding
+            </p>
+            <h2 className="text-3xl md:text-4xl font-semibold text-white leading-tight mb-5">
+              We don't just hand you software.{" "}
+              <span className="text-white/35">We set you up to win with it.</span>
+            </h2>
+            <p className="text-white/50 leading-relaxed">
+              Most contractors never got taught how to organize, present, and price their estimates —
+              and that's not a software problem. Your $400 activation includes one-on-one time with us
+              to get it right for your specific trade.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-4">
+            {[
+              {
+                step: "01",
+                title: "Organize your estimates",
+                desc: "We work with you to structure your line items, scopes, and packages so every estimate is clear and consistent.",
+              },
+              {
+                step: "02",
+                title: "Get your pricing right",
+                desc: "We walk through your costs, margins, and what you should be charging — built around your field, not a generic template.",
+              },
+              {
+                step: "03",
+                title: "Learn to present them",
+                desc: "We teach you how to deliver estimates professionally so customers understand the value and say yes with confidence.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="rounded-2xl border border-white/[0.07] bg-white/[0.03] p-7">
+                <p className="text-xs font-medium tracking-widest text-blue-400 mb-4">{item.step}</p>
+                <h3 className="text-base font-semibold text-white mb-2">{item.title}</h3>
+                <p className="text-sm text-white/45 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ═══ PRICING ═══ */}
       <section className="relative z-10 px-6 py-20">
         <div className="max-w-4xl mx-auto">
@@ -267,12 +315,14 @@ export default function ClavePage() {
             {/* Standard */}
             <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-8">
               <p className="text-xs font-medium tracking-widest text-blue-400 uppercase mb-3">Standard</p>
-              <div className="flex items-end gap-2 mb-6">
+              <div className="flex items-end gap-2 mb-2">
                 <span className="text-4xl font-semibold text-white">$297</span>
                 <span className="text-white/40 text-sm mb-1">/month</span>
               </div>
+              <p className="text-xs text-white/40 mb-6">+ $400 one-time activation fee</p>
               <ul className="space-y-3 mb-8">
                 {[
+                  "1-on-1 onboarding: estimate setup, pricing & presentation coaching",
                   "Full CRM setup, built for your business",
                   "Lead & sales pipeline",
                   "Project tracking with stages",

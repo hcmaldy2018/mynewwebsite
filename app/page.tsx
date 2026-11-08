@@ -109,6 +109,15 @@ export default function Home() {
                   and run your whole operation from your phone. Built simple on purpose —
                   by someone who has actually worked in the field.
                 </p>
+                <div className="rounded-xl border border-blue-500/20 bg-blue-500/[0.06] p-4 mb-8">
+                  <p className="text-sm font-semibold text-white mb-1">
+                    $400 one-time activation — includes 1-on-1 setup
+                  </p>
+                  <p className="text-xs text-white/50 leading-relaxed">
+                    We sit down with you to organize your estimates, build your pricing, and teach
+                    you how to present them in your specific trade — so Clave works from day one.
+                  </p>
+                </div>
                 <a
                   href="/clave"
                   className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-[#0a0f1e] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_40px_rgba(96,165,250,0.35)]"
@@ -136,36 +145,28 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Lead Gen + Sales Training */}
-          <div className="grid md:grid-cols-2 gap-px bg-white/[0.06] rounded-2xl overflow-hidden border border-white/[0.06]">
-            {[
-              {
-                icon: (
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 01-1.44-4.282m3.102.069a18.03 18.03 0 01-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 018.835 2.535M10.34 6.66a23.847 23.847 0 008.835-2.535m0 0A23.74 23.74 0 0018.795 3m.38 1.125a23.91 23.91 0 011.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 001.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 010 3.46" />
-                  </svg>
-                ),
-                title: "Lead Generation",
-                desc: "Paid social and organic strategies that generate real inbound calls — not vanity metrics. We've done it for tree service, pool companies, and more.",
-              },
-              {
-                icon: (
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-                  </svg>
-                ),
-                title: "Sales Training",
-                desc: "Close more jobs with less pressure. Built on real high-ticket sales experience from roofing, siding, and windows — where you either close or you don't.",
-              },
-            ].map((svc, i) => (
-              <div key={i} className="group relative bg-[#0a0f1e] p-8 transition-all duration-300 hover:bg-white/[0.03]">
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 mb-5 transition-colors group-hover:bg-blue-500/20">
-                  {svc.icon}
-                </div>
-                <h3 className="text-base font-semibold text-white mb-3">{svc.title}</h3>
-                <p className="text-sm text-white/45 leading-relaxed">{svc.desc}</p>
+          {/* Social Media Management */}
+          <div className="group relative rounded-2xl border border-white/[0.06] bg-[#0a0f1e] p-8 md:p-10 transition-all duration-300 hover:bg-white/[0.03]">
+            <div className="grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-10 items-center">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 transition-colors group-hover:bg-blue-500/20">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 8.25h3m-3 3h3m-6 3h.008v.008H6v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
               </div>
-            ))}
+              <div>
+                <h3 className="text-lg font-semibold text-white mb-2">Social Media Management</h3>
+                <p className="text-sm text-white/45 leading-relaxed max-w-2xl">
+                  We create and post 4 professional pieces of content a month that tell your
+                  company&apos;s story and show customers you&apos;re the real deal. Not paid ads —
+                  just a consistent, polished presence. Today, having no presence makes a company
+                  look smaller than it is.
+                </p>
+              </div>
+              <div className="md:text-right">
+                <p className="text-xs text-white/35 uppercase tracking-widest mb-1">Starting at</p>
+                <p className="text-2xl font-semibold text-white">$400<span className="text-sm text-white/40 font-normal">/month</span></p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -283,7 +284,7 @@ export default function Home() {
             </h2>
             <p className="relative text-white/50 mb-10 max-w-lg mx-auto">
               15 minutes. No pitch. We'll look at where you are, where you want to go,
-              and tell you exactly how we can help — whether that's systems, leads, or financial planning.
+              and tell you exactly how we can help — whether that's systems, social media, or financial planning.
             </p>
             <a
               href="/contact"
