@@ -231,8 +231,15 @@ export default function ClavePage() {
             </h2>
             <p className="text-white/50 leading-relaxed mb-5">
               We've used the CRMs that make you feel like you need a training course just to log a lead.
-              Clave was designed by someone who has sold roofing, siding, and windows door to door —
-              and knows that your team won't use a system that slows them down.
+              Clave was designed by someone with years in high-ticket sales — siding, windows,
+              roofing, and inground pools — in highly competitive industries where every lead
+              counts, and who knows your team won't use a system that slows them down.
+            </p>
+            <p className="text-white/50 leading-relaxed mb-5">
+              It was also shaped by time inside a small company, learning the financial side
+              firsthand — and why tracking everything, from lead sources to project budgets,
+              is what separates guessing from growing. That's what makes Clave great: it's
+              useful and easy to use at every level, from the owner to the sales rep to the field crew.
             </p>
             <p className="text-white/50 leading-relaxed">
               Whether you're a solo operator just getting organized or an established company

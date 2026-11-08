@@ -184,7 +184,7 @@ export default function Home() {
             </h2>
             <p className="text-white/50 leading-relaxed mb-6">
               Most consultants hand you a slide deck and disappear. We come from high-ticket
-              sales — roofing, siding, windows — where you either close or you don't.
+              sales — roofing, siding, windows, inground pools — in competitive markets where you either close or you don't.
               That's the same energy we bring to every system we build for your business.
             </p>
             <p className="text-white/50 leading-relaxed">
