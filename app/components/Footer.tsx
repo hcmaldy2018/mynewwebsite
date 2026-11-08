@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+const services: { label: string; href?: string }[] = [
+  { label: "Clave CRM", href: "/clave" },
+  { label: "Social Media Management" },
+  { label: "Marketing Partnerships" },
+  { label: "Life Insurance" },
+  { label: "Retirement Planning" },
+  { label: "Exit Strategy" },
+];
+
 export function Footer() {
   return (
     <footer className="relative z-10 border-t border-white/[0.06] bg-[#0a0f1e] px-6 py-12">
@@ -13,7 +22,7 @@ export function Footer() {
               Romero & Locksley
             </p>
             <p className="text-xs text-white/30 leading-relaxed max-w-[220px]">
-              Technology built from field experience. Helping contractors operate like a real business.
+              Services built from experience. Helping contractors and self-employed owners run, grow, and protect their business.
             </p>
           </div>
 
@@ -23,17 +32,20 @@ export function Footer() {
               Services
             </p>
             <ul className="space-y-2.5">
-              {[
-                "Operations & Contracts",
-                "Lead Generation",
-                "AI & Automation",
-                "Sales Training",
-                "Social Media Management",
-              ].map((s) => (
-                <li key={s}>
-                  <span className="text-xs text-white/35 hover:text-white/70 transition-colors cursor-default">
-                    {s}
-                  </span>
+              {services.map((s) => (
+                <li key={s.label}>
+                  {s.href ? (
+                    <Link
+                      href={s.href}
+                      className="text-xs text-white/35 hover:text-white/70 transition-colors"
+                    >
+                      {s.label}
+                    </Link>
+                  ) : (
+                    <span className="text-xs text-white/35 cursor-default">
+                      {s.label}
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
@@ -45,6 +57,22 @@ export function Footer() {
               Get in Touch
             </p>
             <ul className="space-y-2.5">
+              <li>
+                <a
+                  href="tel:+15403002501"
+                  className="text-xs text-white/35 hover:text-white/70 transition-colors"
+                >
+                  540-300-2501
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:contact@romerolocksley.com"
+                  className="text-xs text-white/35 hover:text-white/70 transition-colors"
+                >
+                  contact@romerolocksley.com
+                </a>
+              </li>
               <li>
                 <span className="text-xs text-white/35">Fredericksburg, VA</span>
               </li>
@@ -66,7 +94,7 @@ export function Footer() {
             © {new Date().getFullYear()} Romero & Locksley LLC. All rights reserved.
           </p>
           <p className="text-xs text-white/20">
-            Technology Built From Field Experience
+            Services Built From Experience
           </p>
         </div>
 
